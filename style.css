@@ -2,89 +2,78 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: "raleway", sans-serif;
 }
 
-header, .section_1{
-    margin: 0 5%;
+.contenu_body{
+    width: auto;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 
-body{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    margin: 0;
-}
-
-.body_content{
-    width: 1440px;
-    margin: auto;
-}
-
-/* HEADER */
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-}
-
-.header_logo{
-    display: flex;
-    align-self: center;
-    width: 7%;
+    height: 120px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 header img{
-    width: 100%;
+    width: 26%;
 }
-
 nav{
     width: 500px;
 }
-
 nav ul{
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
-}
-
-nav li{
     list-style-type: none;
-    padding-left: 1px;
-    padding-right: 1px;
 }
 
-.nav_link_accommodation{
-    padding-top: 35px;
-    padding-bottom: 40px;
-    padding-left: 30px;
-    padding-right: 30px;
+nav ul li{
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+nav ul li a{
     text-decoration: none;
     color: black;
 }
 
-.nav_link_activities{
-    padding-top: 35px;
-    padding-bottom: 40px;
+.nav_link_accommodation{
     padding-left: 30px;
     padding-right: 30px;
-    text-decoration: none;
+    padding-top: 45px;
 }
-    
-.nav_link_register{
+
+.nav_link_activities{
     padding-left: 30px;
-    font-weight: bold;
-    color: #0065FC;
-    text-decoration: none;
+    padding-right: 30px;
+    padding-top: 45px;
 }
 
 .nav_link_accommodation:hover, .nav_link_activities:hover{
-    border-top: #0065FC 3px solid;
+    border-top: #0065fc 3px solid;
+    color: #0065fc;
+}
+
+
+.nav_link_register{
+    padding-left: 30px;
+}
+
+.nav_link_register{
+    font-weight: bold;
+    color: #0065fc;
 }
 
 .nav_link_register:hover{
-    transition: ease-in 300ms;
-    color: #DEEBFF;
+    transition: ease-in 500ms;
+    color: lightblue;
 }
+
+
 
 /* SECTION 1 */
 .search_box{
@@ -94,7 +83,7 @@ nav li{
     margin: 30px 30px;
 }
 
-.description{
+.description_section_1{
     margin-bottom: 30px;
 }
 
@@ -103,12 +92,15 @@ h1{
     height: 35px;
 }
 
-/* FORMULAIRE */
+
+
+/* PARTIE RECHERCHE */
 .form_box{
     display: flex;
     width: auto;
     height: auto;
     align-items: center;
+    padding-top: 20px;
 }
 
 .map_marker{
@@ -152,6 +144,8 @@ input::placeholder{
     font-weight: 600;
 }
 
+
+
 /* FILTRES */
 .search_box{
     font-weight: 900;
@@ -168,6 +162,11 @@ input::placeholder{
     margin-right: 15px;
     border-radius: 999px;
     background-color: #DEEBFF;
+}
+
+.section_1{
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .section_1 ul{
@@ -199,6 +198,8 @@ input::placeholder{
     transition: ease-in 400ms;
 }
 
+
+
 /* INFORMATION */
 .info_search{
     display: flex;
@@ -219,45 +220,57 @@ input::placeholder{
     color: #0065FC;
 }
 
+
+
 /* MAIN */
 main{
     display: flex;
+    justify-content: space-between;
+    margin-right: 3.5%;
 }
 
-.main_box{
+.contenu_main{
     display: flex;
     flex-direction: column;
-    background-color: #F2F2F2;
     border-radius: 30px;
-    width: 61%;
-    padding-left: 3%;
-    margin-left: 3.5%;
-    margin-right: 3%;
+    width: auto;
+    
 }
 
-.main_box article:hover{
+.contenu_main article:hover{
     box-shadow: 8px 8px 10px #0065fc;
     transition: linear 400ms;
     
 }
 
+
+
 /* SECTION 2 */
 .section_2{
     padding-top: 5%;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    margin-right: 40px;
+    padding-left: 40px;
+    width: 880px;
 }
 
 .section_2 h2{
     margin-bottom: 25px;
 }
 
-.contenu_hebergements_1{
+.contenu_main .contenu_hebergements_1{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.contenu_hebergements_1 article{
+.section_2 a{
+    text-decoration: none;
+}
+
+.contenu_main .contenu_hebergements_1 article{
     width: 238px;
     height: 200px;
     background-color: white;
@@ -266,24 +279,25 @@ main{
     border-radius: 19px;
 }
 
-.contenu_hebergements_1 article img{
+.contenu_main .contenu_hebergements_1 article img{
     width: 230px;
     height: 60%;
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
 }
 
-.info_article{
+.contenu_main .info_article{
     font-size: 14px;
     font-weight: 500;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding-bottom: 10px;
+    padding-left: 15px;
 }
 
 .contenu_hebergements_2{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
 }
@@ -293,7 +307,7 @@ main{
     height: 200px;
     background-color: white;
     border: white solid 4px;
-    margin-right: 35px;
+    margin-right: 40px;
     border-radius: 19px;
 }
 
@@ -313,6 +327,8 @@ main{
     text-decoration: none;
 }
 
+
+
 /* COULEURS ETOILES */
 .full_stars{
     color: #0065FC;
@@ -324,22 +340,84 @@ main{
     font-size: 12px;
 }
 
-/* PARTIE A CLASSER */
+article h3, p, .full_stars, .empty_stars{
+    padding-top: 6px;
+}
+
+
+
+/* SECTION 3 */
+.contenu_section_3{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 45px;
+    width: 476px;
+}
+
+aside .titre_populaires{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 45px;
+    padding-top: 45px;
+}
+
+.section_3 .titre_populaires i{
+    font-size: 25px;
+}
+
+aside .contenu_populaires{  
+    border-radius: 30px;
+}
+
+aside section{
+    display: flex;
+    border: 5.5px solid white;
+    border-radius: 15px;
+    margin-right: 0px;
+    background-color: white;
+    margin-bottom: 33px;
+}
+
+aside section:hover{
+    box-shadow: 8px 8px 10px #0065fc;
+    transition: linear 400ms;
+}
+
+aside a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+.contenu_populaires section img{
+    width: 126px;
+    height: 130px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+aside .info_article{
+    padding: 10px 40px 0 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: white;
+}
+
 article h3{
     font-size: 17px;
     font-weight: 800;
     color: black;
-}    
+}
 
 article p{
     padding-top: 5px;
     color: black;
 }
 
-article h3, p, .full_stars, .empty_stars{
-    padding-top: 6px;
-}
-
-section a{
-    text-decoration: none;
+aside .info_article i{
+    padding-top: 30px;
 }

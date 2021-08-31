@@ -20,7 +20,7 @@
     </head>
 
     <body>
-        <div class="body_content">
+        <div class="contenu_body">
 
             <!-- Header -->
             <header>
@@ -32,27 +32,28 @@
                 <nav>
                     <ul>
                         <li><a href="#hebergements" class="nav_link_accommodation">Hébergements</a></li>
-                        <li><a href="#" class="nav_link_activities">Activités</a></li>
+                        <li><a href="#activites" class="nav_link_activities">Activités</a></li>
                         <li><a href="#" class="nav_link_register">S'inscrire</a></li>
-                        
                     </ul>
                 </nav>
             </header>
 
             <!-- Section 1 -->
             <section class="section_1">
-                <div class="description">
+
+                <div class="titre_section_1">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
 
-                <!-- Formulaire -->
+                <!-- Partie recherche -->
                 <div class="form_box">
                     <i class="fas fa-map-marker-alt map_marker"></i>
                     
                     <form class="contenu_formulaire" action="#">
                             <input type="search" id="search_text" name="search_area" placeholder="Marseille, France" class="search_text">
                     </form>
+
                     <form class="contenu_formulaire">
                         <input type="submit" value="Rechercher" class="search_button">
                     </form>
@@ -79,12 +80,14 @@
 
             <!-- Main -->
             <main>
-                <div class="main_box">
+                <div class="contenu_main">
 
                     <!-- Section 2 -->
                     <section class="section_2">
 
-                        <h2>Hébergements à Marseille</h2>
+                        <div class="titre_section_2">
+                            <h2>Hébergements à Marseille</h2>
+                        </div>
 
                         <div id="hebergements" class="contenu_hebergements_1">
                             <article>
@@ -102,8 +105,6 @@
                                     </div>
                                 </a>
                             </article>
-                            
-                            
                             
                             <article>
                                 <a href="#">
@@ -155,6 +156,7 @@
                                             <i class="fas fa-star"></i>
                                         </span>
                                     </div>
+                                </a>
                             </article>
 
                             <article>
@@ -172,6 +174,7 @@
                                             <i class="fas fa-star"></i>
                                         </span>
                                     </div>
+                                </a>
                             </article>
 
                             <article>
@@ -195,7 +198,67 @@
                         </div>
                     </section>
                 </div>
-            </main> 
+            
+
+                <!-- Section 3 -->
+                <aside class="section_3">
+                    
+                    <div class="contenu_section_3">
+
+                        <div class="titre_populaires">
+                            <h2>Les plus populaires</h2>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        
+                        <div class="contenu_populaires">
+                            <section>
+                                <a href="#">
+                                    <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo_populaires">
+                                    <div class="info_article">
+                                        <h3>Hôtel Le soleil du matin</h3>
+                                        <p>Nuit à partir de 128<strong>€</strong></p>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                    </div>
+                                </a>
+                            </section>
+                            
+                            <section>
+                                <a href="#">
+                                    <img src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo_populaires">
+                                    <div class="info_article">
+                                        <h3>Au cœur de l'eau Chambres d'hôtes</h3>
+                                        <p>Nuit à partir de 71<strong>€</strong></p>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <span class="empty_stars"><i class="fas fa-star"></i></span>
+                                    </div>
+                                </a>
+                            </section>
+
+                            <section>
+                                <a href="#">
+                                    <img src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo_populaires">
+                                    <div class="info_article">
+                                        <h3>Hôtel tout bleu et Banc</h3>
+                                        <p>Nuit à partir de 68<strong>€</strong></p>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <i class="fas fa-star full_stars"></i>
+                                        <span class="empty_stars"><i class="fas fa-star"></i></span>
+                                    </div>
+                                </a>
+                            </section>
+                        </div>
+                    </div>
+                </aside>
+            </main>
         </div>
     </body>
 </html>
