@@ -21,6 +21,7 @@ header{
 }
 
 header img{
+    height: 7%;
     width: 26%;
 }
 nav{
@@ -226,15 +227,20 @@ input::placeholder{
 main{
     display: flex;
     justify-content: space-between;
-    margin-right: 3.5%;
+    margin-right: 0%;
 }
 
 .contenu_main{
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    width: auto;
+    width: 63%;
     
+}
+
+.contenu_main article{
+    display: flex;
+    width: 100%;
 }
 
 .contenu_main article:hover{
@@ -250,9 +256,8 @@ main{
     padding-top: 5%;
     background-color: #F2F2F2;
     border-radius: 30px;
-    margin-right: 40px;
     padding-left: 40px;
-    width: 880px;
+    width: 100%;
 }
 
 .section_2 h2{
@@ -261,17 +266,19 @@ main{
 
 .contenu_main .contenu_hebergements_1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .section_2 a{
     text-decoration: none;
+    width: 100%;
 }
 
 .contenu_main .contenu_hebergements_1 article{
-    width: 238px;
+    width: 100%;
     height: 200px;
     background-color: white;
     border: white solid 4px;
@@ -280,7 +287,7 @@ main{
 }
 
 .contenu_main .contenu_hebergements_1 article img{
-    width: 230px;
+    width: 100%;
     height: 60%;
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
@@ -295,15 +302,15 @@ main{
     padding-left: 15px;
 }
 
-.contenu_hebergements_2{
+.contenu_main .contenu_hebergements_2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.contenu_hebergements_2 article{
-    width: 238px;
+.contenu_main .contenu_hebergements_2 article{
+    width: 100%;
     height: 200px;
     background-color: white;
     border: white solid 4px;
@@ -311,8 +318,8 @@ main{
     border-radius: 19px;
 }
 
-.contenu_hebergements_2 article img{
-    width: 230px;
+.contenu_main .contenu_hebergements_2 article img{
+    width: 100%;
     height: 60%;
     border-top-left-radius: 19px;
     border-top-right-radius: 19px;
@@ -325,6 +332,7 @@ main{
     font-weight: bold;
     color: black;
     text-decoration: none;
+    width: 100%;
 }
 
 
@@ -355,6 +363,7 @@ article h3, p, .full_stars, .empty_stars{
     padding-left: 40px;
     padding-right: 45px;
     width: 476px;
+    padding-bottom: 8px;
 }
 
 aside .titre_populaires{
@@ -499,6 +508,7 @@ footer{
     margin-top: 60px;
     padding-top: 40px;
     padding-bottom: 50px;
+    padding-right: 25%;
 }
 
 .titre_footer{
