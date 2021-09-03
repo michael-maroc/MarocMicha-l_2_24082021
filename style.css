@@ -475,7 +475,7 @@ main .contenu_main .section_2 .contenu_hebergements_2 article:hover{
     width: auto;
 }
 
-.contenu_activites .test{
+.contenu_activites .colonne_activites{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
