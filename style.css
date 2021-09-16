@@ -146,6 +146,7 @@ nav{
 
 .accommodation_link2, .activities_link2{
     text-decoration: none;
+    color: black;
 }
 
 .accommodation_link2:hover, .activities_link2:hover{
