@@ -98,7 +98,7 @@ nav{
     margin-right: 1%;
     font-size: 1em;
     font-weight: 500;
-    height: 100px;
+    height: 120px;
     width: 100%;
 }
 
@@ -117,7 +117,7 @@ nav{
 .accommodation_link:hover, .activities_link:hover{
     padding-top: 40px;
     color: #0065FC;
-    border-top: 2px solid #0065fc;
+    border-top: 3px solid #0065fc;
 }
 
 .sign_up_link{
